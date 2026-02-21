@@ -37,60 +37,65 @@
   <main class="page-wrapper">
 
     <!-- ── Hero ─────────────────────────────────────────── -->
-    <section class="hero hero--split">
-      <!-- Left panel: dark text content -->
-      <div class="hero-split__left">
-        <div class="hero-split__content">
-          <div class="hero__eyebrow">AI Experience Architect · Berlin</div>
+    <section class="hero hero--cinematic">
+      <!-- Background image -->
+      <img src="astronaut.jpg" alt="" class="hero-cinematic__bg" aria-hidden="true" />
+      <!-- Layered gradient overlay: dark on left for readability, fades to transparent right  -->
+      <div class="hero-cinematic__overlay"></div>
+
+      <!-- Content anchored bottom-left, editorial style -->
+      <div class="container hero-cinematic__inner">
+        <div class="hero-cinematic__content">
+          <div class="hero__eyebrow">
+            <span class="hero-eyebrow__dot"></span>
+            AI Experience Architect · Berlin
+          </div>
           <h1 class="display-xl hero__title">
             <span class="line">Your AI is Fast.</span>
             <span class="line line--accent">But is it Costing</span>
             <span class="line">You Customers?</span>
           </h1>
           <p class="hero__desc">
-            Stop letting automated agents ruin your user experience. I audit, map, and fix the
-            <strong class="hero__strong">"AI Experience Debt"</strong> quietly driving your users to competitors.
+            I audit, map, and fix the <strong class="hero__strong">"AI Experience Debt"</strong>
+            quietly driving your users to competitors.
           </p>
           <div class="hero__actions">
             <a href="contact.html" class="btn btn--primary">
-              Book a Free Audit Call
+              Request a 15-Min Agent Teardown
               <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
             <a href="portfolio.html" class="btn btn--ghost">See My Work</a>
           </div>
-          <!-- Credential tags -->
-          <div class="hero__tags">
-            <span class="hero-tag">15+ yrs experience</span>
-            <span class="hero-tag">Fintech · Web3 · SaaS</span>
-            <span class="hero-tag">Berlin-based</span>
+        </div>
+
+        <!-- Floating credential strip — bottom right -->
+        <div class="hero-cinematic__creds">
+          <div class="hero-cred">
+            <span class="hero-cred__n">15+</span>
+            <span class="hero-cred__l">Years<br>Experience</span>
+          </div>
+          <div class="hero-cred__sep"></div>
+          <div class="hero-cred">
+            <span class="hero-cred__n">3×</span>
+            <span class="hero-cred__l">Industries<br>Fintech · Web3 · SaaS</span>
+          </div>
+          <div class="hero-cred__sep"></div>
+          <div class="hero-cred">
+            <span class="hero-cred__n">
+              <span class="hero-cred__dot"></span>
+            </span>
+            <span class="hero-cred__l">Available<br>for projects</span>
           </div>
         </div>
       </div>
 
-      <!-- Right panel: portrait -->
-      <div class="hero-split__right">
-        <!-- Decorative line top -->
-        <div class="hero-portrait-wrap">
-          <div class="hero-portrait__accent-line"></div>
-          <div class="hero-portrait__frame">
-            <img src="wojciech.jpg" alt="Wojciech Hupert — AI Experience Architect" class="hero-portrait__img" />
-            <!-- Floating label -->
-            <div class="hero-portrait__label">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 8v4l3 3" />
-              </svg>
-              Available for projects
-            </div>
-          </div>
-          <!-- Floating stat -->
-          <div class="hero-portrait__stat">
-            <span class="hero-portrait__stat-n">15+</span>
-            <span class="hero-portrait__stat-l">Years of<br>design work</span>
-          </div>
-        </div>
+      <!-- Scroll hint -->
+      <div class="hero-cinematic__scroll">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
       </div>
     </section>
 
@@ -152,11 +157,12 @@
             <p class="eyebrow">The Solution</p>
             <h2 class="display-md" style="margin-top:12px;margin-bottom:24px;">Bridging Machine Logic and Human Trust
             </h2>
-            <p>I don't write backend code, and I don't sell AI platforms. I am an Operations Architect who fixes the
-              usability friction that automated agents leave behind.</p>
-            <p style="margin-top:16px;">I audit your agentic workflows, identify the silent failures driving your
-              customers away, and design the operational guardrails that put you back in control of your brand's
-              experience.</p>
+            <p>Developers build the API connection. I build the user retention logic. I map the edge-cases your
+              engineering team misses — the dead-end loops, the silent failures, the moments an agent loses a customer
+              forever.</p>
+            <p style="margin-top:16px;">As an Operations Architect, I audit your agentic workflows, identify the
+              friction driving your customers away, and design the guardrails that put you back in control of your
+              brand's experience.</p>
             <a href="about.html" class="btn btn--outline" style="margin-top:32px;display:inline-flex;">
               My Background & Approach
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -301,12 +307,13 @@
           <p class="eyebrow"
             style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--color-accent);margin-bottom:16px;">
             Ready to Stop the Bleeding?</p>
-          <h2 class="display-md" style="margin-bottom:16px;color:#fff;">Let's audit your AI experience.</h2>
-          <p style="max-width:480px;margin:0 auto 32px;color:rgba(255,255,255,0.7);">
-            One conversation is all it takes to identify the biggest Experience Debt in your agentic workflows.
+          <h2 class="display-md" style="margin-bottom:16px;color:#fff;">Find out where your AI is losing customers.</h2>
+          <p style="max-width:520px;margin:0 auto 32px;color:rgba(255,255,255,0.7);">
+            In 15 minutes, I'll identify one specific workflow where your agentic AI is creating Experience Debt — no
+            pitch, no commitment.
           </p>
           <a href="contact.html" class="btn btn--primary" style="font-size:1rem;padding:16px 40px;">
-            Book a Free Audit Call
+            Request a 15-Min Agent Teardown
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
