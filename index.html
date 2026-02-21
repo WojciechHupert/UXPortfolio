@@ -37,20 +37,19 @@
   <main class="page-wrapper">
 
     <!-- ── Hero ─────────────────────────────────────────── -->
-    <section class="hero hero--photo">
-      <img src="wojciech.jpg" alt="Wojciech Hupert" class="hero__photo" />
-      <div class="hero__overlay"></div>
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="hero__eyebrow" style="color:rgba(255,255,255,0.6);">AI Experience Architect · Berlin</div>
-          <h1 class="display-xl hero__title" style="color:#fff;">
+    <section class="hero hero--split">
+      <!-- Left panel: dark text content -->
+      <div class="hero-split__left">
+        <div class="hero-split__content">
+          <div class="hero__eyebrow">AI Experience Architect · Berlin</div>
+          <h1 class="display-xl hero__title">
             <span class="line">Your AI is Fast.</span>
             <span class="line line--accent">But is it Costing</span>
-            <span class="line" style="color:#fff;">You Customers?</span>
+            <span class="line">You Customers?</span>
           </h1>
-          <p class="hero__desc" style="color:rgba(255,255,255,0.78);">
+          <p class="hero__desc">
             Stop letting automated agents ruin your user experience. I audit, map, and fix the
-            <strong style="color:#fff;">"AI Experience Debt"</strong> that is quietly driving your users to competitors.
+            <strong class="hero__strong">"AI Experience Debt"</strong> quietly driving your users to competitors.
           </p>
           <div class="hero__actions">
             <a href="contact.html" class="btn btn--primary">
@@ -59,8 +58,37 @@
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="portfolio.html" class="btn btn--outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">See
-              My Work</a>
+            <a href="portfolio.html" class="btn btn--ghost">See My Work</a>
+          </div>
+          <!-- Credential tags -->
+          <div class="hero__tags">
+            <span class="hero-tag">15+ yrs experience</span>
+            <span class="hero-tag">Fintech · Web3 · SaaS</span>
+            <span class="hero-tag">Berlin-based</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right panel: portrait -->
+      <div class="hero-split__right">
+        <!-- Decorative line top -->
+        <div class="hero-portrait-wrap">
+          <div class="hero-portrait__accent-line"></div>
+          <div class="hero-portrait__frame">
+            <img src="wojciech.jpg" alt="Wojciech Hupert — AI Experience Architect" class="hero-portrait__img" />
+            <!-- Floating label -->
+            <div class="hero-portrait__label">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+              Available for projects
+            </div>
+          </div>
+          <!-- Floating stat -->
+          <div class="hero-portrait__stat">
+            <span class="hero-portrait__stat-n">15+</span>
+            <span class="hero-portrait__stat-l">Years of<br>design work</span>
           </div>
         </div>
       </div>
