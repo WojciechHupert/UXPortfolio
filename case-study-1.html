@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podigee Platform Redesign — Wojciech Hupert</title>
+    <meta name="description"
+        content="UX case study: Podigee Platform Redesign — modernising a decade-old podcast hosting platform with a new design system and AI-powered features." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">W<span>.</span>Hupert</a>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav__cta">Contact</a></li>
+            </ul>
+            <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav__mobile" id="navMobile">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+
+        <!-- ── Case Hero ──────────────────────────────────────── -->
+        <section class="case-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="portfolio.html">Work</a>
+                    <span>›</span>
+                    <span>Podigee Platform Redesign</span>
+                </div>
+
+                <div class="case-hero__meta">
+                    <span class="tag tag--accent">Podcast SaaS</span>
+                    <span class="tag">Design System</span>
+                    <span class="tag">AI Features</span>
+                    <span class="tag">UX/UI Design</span>
+                </div>
+
+                <h1 class="display-lg case-hero__title">Podigee Platform Redesign</h1>
+                <p class="case-hero__summary">
+                    Modernising a decade-old podcast hosting platform — rebuilding the design system from scratch,
+                    reducing visual noise, and launching AI-powered features that transformed Podigee into a
+                    modern industry leader.
+                </p>
+
+                <div class="case-stats">
+                    <div>
+                        <div class="case-stat__label">My Role</div>
+                        <div class="case-stat__value">Product Designer</div>
+                    </div>
+                    <div>
+                        <div class="case-stat__label">Company</div>
+                        <div class="case-stat__value">Podigee, Berlin</div>
+                    </div>
+                    <div>
+                        <div class="case-stat__label">Duration</div>
+                        <div class="case-stat__value">10 Months</div>
+                    </div>
+                    <div>
+                        <div class="case-stat__label">Period</div>
+                        <div class="case-stat__value">Nov 2023 — Present</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Overview ────────────────────────────────────────── -->
+        <div class="case-section">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">Overview</h2>
+                <p class="reveal reveal-delay-1">
+                    Podigee is a leading German podcast hosting and analytics platform. When I joined, the product had
+                    accumulated a decade of incremental feature additions without a coherent design language — resulting
+                    in a cluttered, inconsistent interface that frustrated users and slowed down development.
+                </p>
+                <p class="reveal reveal-delay-2" style="margin-top:16px;">
+                    My brief was to fully modernise the platform: rationalise the design system, improve user
+                    engagement,
+                    and introduce new AI-powered features — all while maintaining continuity for existing users.
+                </p>
+
+                <div class="case-image reveal">
+                    <!-- Add Podigee before/after screenshots here -->
+                    Platform Before &amp; After — Add screenshots here
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Problem ─────────────────────────────────────────── -->
+        <div class="case-section">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">The Problem</h2>
+                <p class="reveal reveal-delay-1">
+                    A decade of product decisions had left the platform visually noisy and technically inconsistent.
+                    Components were duplicated across the codebase with no shared source of truth. New feature
+                    development
+                    was slow because developers had no reliable patterns to reference, and the UI felt dated compared
+                    to modern SaaS competitors.
+                </p>
+                <div class="callout reveal reveal-delay-2">
+                    <p>
+                        The design system had grown organically for 10 years — it wasn't one system, it was dozens of
+                        overlapping micro-decisions made by different people at different times. The task was to find
+                        the signal in the noise and build something coherent.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Research ────────────────────────────────────────── -->
+        <div class="case-section" style="background:var(--color-surface);">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">Discovery &amp; Audit</h2>
+                <p class="reveal reveal-delay-1">
+                    I began with a comprehensive audit of the existing interface — cataloguing all components,
+                    identifying
+                    duplicates, and mapping user workflows through the core product areas. I cross-referenced with
+                    user feedback and support tickets to understand which areas caused the most frustration.
+                </p>
+                <p class="reveal reveal-delay-2" style="margin-top:16px;">
+                    Key findings: the platform had 40+ redundant component variants, inconsistent spacing and typography
+                    scales,
+                    and several features that received minimal usage but created significant navigational complexity.
+                    Underperforming features were flagged for retirement as part of the redesign.
+                </p>
+
+                <div class="case-image reveal">
+                    <!-- Add audit / component inventory screenshots -->
+                    Design Audit — Component Inventory &amp; Usage Analysis
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Design Process ──────────────────────────────────── -->
+        <div class="case-section">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">Design System Architecture</h2>
+                <p class="reveal reveal-delay-1">
+                    I designed and built a new design system comprising 80+ reusable components — from foundational
+                    tokens
+                    (colour, typography, spacing, elevation) through to complex composed patterns for data tables,
+                    navigation, and media players. Every component was built to be accessible, responsive, and
+                    documented.
+                </p>
+
+                <div class="case-image reveal">
+                    <!-- Add design system / component library screenshots -->
+                    Design System — Component Library Overview
+                </div>
+
+                <p class="reveal" style="margin-top:16px;">
+                    Working closely with the development team, I ensured every design decision was grounded in
+                    technical feasibility. The system significantly reduced design-to-development handoff friction
+                    and improved UI consistency across the product.
+                </p>
+
+                <div class="case-image reveal">
+                    <!-- Add token / documentation screenshots -->
+                    Token Structure &amp; Documentation
+                </div>
+            </div>
+        </div>
+
+        <!-- ── AI Features ──────────────────────────────────────── -->
+        <div class="case-section" style="background:var(--color-surface);">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">AI-Powered SEO Insights</h2>
+                <p class="reveal reveal-delay-1">
+                    Alongside the design system work, I designed and launched an AI-powered "SEO Insights" feature —
+                    enabling podcasters to analyse their episode content quality, identify SEO opportunities,
+                    and receive actionable recommendations to improve discoverability.
+                </p>
+                <p class="reveal reveal-delay-2" style="margin-top:16px;">
+                    The challenge was presenting AI-generated data in a way that felt trustworthy, understandable,
+                    and actionable for non-technical users. I designed progressive disclosure patterns that surfaced
+                    summary scores at a glance, with expandable detail for users who needed to dig deeper.
+                </p>
+
+                <div class="case-image reveal">
+                    <!-- Add AI SEO Insights screenshots -->
+                    AI SEO Insights — Content Analysis Feature
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Outcome ─────────────────────────────────────────── -->
+        <div class="case-section">
+            <div class="container" style="max-width:800px;">
+                <h2 class="display-md reveal">Outcome &amp; Impact</h2>
+
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:32px 0;" class="reveal">
+                    <div
+                        style="text-align:center;padding:24px;background:var(--color-accent-light);border-radius:var(--radius-md);">
+                        <div style="font-size:2rem;font-weight:700;color:var(--color-accent);margin-bottom:4px;">80+
+                        </div>
+                        <div style="font-size:0.85rem;color:var(--color-text-muted);font-weight:500;">Reusable
+                            Components</div>
+                    </div>
+                    <div
+                        style="text-align:center;padding:24px;background:var(--color-accent-light);border-radius:var(--radius-md);">
+                        <div style="font-size:2rem;font-weight:700;color:var(--color-accent);margin-bottom:4px;">↑</div>
+                        <div style="font-size:0.85rem;color:var(--color-text-muted);font-weight:500;">User Engagement
+                        </div>
+                    </div>
+                    <div
+                        style="text-align:center;padding:24px;background:var(--color-accent-light);border-radius:var(--radius-md);">
+                        <div style="font-size:2rem;font-weight:700;color:var(--color-accent);margin-bottom:4px;">↑</div>
+                        <div style="font-size:0.85rem;color:var(--color-text-muted);font-weight:500;">Dev Velocity</div>
+                    </div>
+                </div>
+
+                <p class="reveal">
+                    The redesign transformed Podigee from a cluttered, legacy product into a modern industry leader.
+                    User satisfaction improved as visual noise was reduced and key workflows were streamlined.
+                    Development velocity increased significantly as the team gained reliable, documented patterns
+                    to build from. The AI SEO Insights feature was well received as a meaningful product differentiator.
+                </p>
+                <p class="reveal" style="margin-top:16px;">
+                    Additionally, I created onboarding video tutorials, animations, and marketing materials to support
+                    the platform's go-to-market communications — ensuring the new product experience was communicated
+                    effectively to both new and existing users.
+                </p>
+            </div>
+        </div>
+
+        <!-- ── Navigation ──────────────────────────────────────── -->
+        <div style="border-top:1px solid var(--color-border);padding:40px 0;">
+            <div class="container"
+                style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+                <a href="portfolio.html" class="btn btn--outline">← All Projects</a>
+                <a href="case-study-2.html" class="btn btn--primary">Next Case Study →</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ── Footer ──────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span class="footer__logo">W<span>.</span>Hupert</span>
+                <nav class="footer__links">
+                    <a href="portfolio.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <p class="footer__copy">© 2026 Wojciech Hupert. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

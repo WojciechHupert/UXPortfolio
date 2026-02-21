@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — Wojciech Hupert</title>
+    <meta name="description"
+        content="Product design case studies by Wojciech Hupert — fintech, Web3, SaaS, and design systems." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">W<span>.</span>Hupert</a>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav__cta">Contact</a></li>
+            </ul>
+            <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav__mobile" id="navMobile">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+
+        <!-- ── Page Header ──────────────────────────────────── -->
+        <section class="section--sm"
+            style="background:var(--color-surface); border-bottom:1px solid var(--color-border);">
+            <div class="container">
+                <p class="eyebrow"
+                    style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--color-accent);margin-bottom:12px;">
+                    Portfolio</p>
+                <h1 class="display-lg">Selected Work</h1>
+                <p style="max-width:560px;margin-top:12px;">15+ years across fintech, Web3, SaaS, and platform design —
+                    from early-stage startups to global enterprise products.</p>
+            </div>
+        </section>
+
+        <!-- ── Case Study Grid ───────────────────────────────── -->
+        <section class="section">
+            <div class="container">
+
+                <!-- Featured Project -->
+                <a href="case-study-1.html" class="card reveal"
+                    style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:32px;">
+                    <div class="card__image--placeholder" style="aspect-ratio:auto;min-height:320px;">
+                        <svg width="64" height="64" fill="none" stroke="#5B4FE8" stroke-width="1.2" viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <div class="card__body"
+                        style="padding:40px;display:flex;flex-direction:column;justify-content:center;">
+                        <div class="card__tags" style="margin-bottom:16px;">
+                            <span class="tag tag--accent">Podcast SaaS</span>
+                            <span class="tag">Design System</span>
+                            <span class="tag">AI Features</span>
+                        </div>
+                        <h3 style="font-size:1.5rem;margin-bottom:12px;">Podigee Platform Redesign</h3>
+                        <p style="margin-bottom:24px;">Led a 10-month redesign of a decade-old podcast platform —
+                            building 80+ reusable components, launching AI-powered SEO Insights, and transforming the
+                            product into a modern industry leader.</p>
+                        <div style="display:flex;gap:32px;margin-bottom:24px;">
+                            <div>
+                                <div
+                                    style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:4px;">
+                                    Role</div>
+                                <div style="font-weight:600;font-size:0.9rem;">Product Designer</div>
+                            </div>
+                            <div>
+                                <div
+                                    style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:4px;">
+                                    Duration</div>
+                                <div style="font-weight:600;font-size:0.9rem;">10 Months</div>
+                            </div>
+                        </div>
+                        <span class="card__link">
+                            Read Case Study
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"
+                                viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Grid of other projects -->
+                <div class="grid-2">
+
+                    <a href="case-study-2.html" class="card reveal reveal-delay-1">
+                        <div class="card__image--placeholder">
+                            <svg width="48" height="48" fill="none" stroke="#5B4FE8" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__tags">
+                                <span class="tag tag--accent">Fintech</span>
+                                <span class="tag">B2B Enterprise</span>
+                            </div>
+                            <h3 class="card__title">FNZ Wealth Management Platform</h3>
+                            <p class="card__desc">Designing core wealth management modules for a global platform —
+                                making complex financial workflows accessible to advisors and institutions worldwide.
+                            </p>
+                            <span class="card__link">
+                                Read Case Study
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Placeholder for more case studies -->
+                    <div class="card reveal reveal-delay-2"
+                        style="display:flex;align-items:center;justify-content:center;min-height:320px;background:var(--color-accent-light);box-shadow:none;border:2px dashed var(--color-border);">
+                        <div style="text-align:center;padding:32px;">
+                            <div style="font-size:2.5rem;margin-bottom:12px;color:var(--color-accent);">＋</div>
+                            <p style="color:var(--color-accent);font-weight:600;font-size:0.95rem;margin-bottom:4px;">
+                                More coming soon</p>
+                            <p style="font-size:0.85rem;color:var(--color-text-muted);">Ocean Protocol, Jobspotting
+                                &amp; more</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer ──────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span class="footer__logo">W<span>.</span>Hupert</span>
+                <nav class="footer__links">
+                    <a href="portfolio.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <p class="footer__copy">© 2026 Wojciech Hupert. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
