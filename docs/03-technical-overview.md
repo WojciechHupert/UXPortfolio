@@ -15,10 +15,17 @@
   - `contact.html`
 - Work and case study pages:
   - `portfolio.html`
-  - `case-study*.html` variants
+  - `case-study*.html` variants (see Case study URLs below)
 - Shared frontend resources:
   - `style.css` (global design system + component styles)
   - `script.js` (navigation, reveal behavior, form handling)
+- **Images:** Currently at repo root (e.g. `astronaut.jpg`, `wojciech.jpg`). An `assets/` or `images/` folder can be introduced later for clarity and scaling.
+
+## Case study URLs
+
+- **Generic:** `case-study.html` — general “Case Study” landing / narrative page.
+- **Numbered:** `case-study-1.html` … `case-study-5.html` — individual project case studies.
+- **Named:** `case-study-cf.html`, `case-study-icon.html`, `case-study-early.html` — same pattern, with descriptive slugs. Portfolio and cross-links use these filenames; no canonical vs. legacy distinction is documented yet.
 
 ## Styling System
 

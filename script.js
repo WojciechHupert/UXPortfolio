@@ -18,15 +18,63 @@
 const burger = document.getElementById('navBurger');
 const mobileNav = document.getElementById('navMobile');
 
+const FOCUSABLE = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+function getFocusables(container) {
+  return Array.from(container.querySelectorAll(FOCUSABLE)).filter(
+    (el) => !el.hasAttribute('disabled') && el.offsetParent !== null
+  );
+}
+
+function openMobileNav() {
+  mobileNav.classList.add('open');
+  burger.setAttribute('aria-expanded', 'true');
+  burger.setAttribute('aria-label', 'Close menu');
+  const focusables = getFocusables(mobileNav);
+  if (focusables.length) focusables[0].focus();
+  document.addEventListener('keydown', handleMobileNavKeydown);
+}
+
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-label', 'Open menu');
+  burger.focus();
+  document.removeEventListener('keydown', handleMobileNavKeydown);
+}
+
+function handleMobileNavKeydown(e) {
+  if (e.key === 'Escape') {
+    closeMobileNav();
+    return;
+  }
+  if (e.key !== 'Tab' || !mobileNav.classList.contains('open')) return;
+  const focusables = getFocusables(mobileNav);
+  if (focusables.length === 0) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  if (e.shiftKey) {
+    if (document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    }
+  } else {
+    if (document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+}
+
 if (burger && mobileNav) {
   burger.addEventListener('click', () => {
-    const isOpen = mobileNav.classList.toggle('open');
-    burger.setAttribute('aria-expanded', isOpen);
+    const isOpen = mobileNav.classList.contains('open');
+    if (isOpen) closeMobileNav();
+    else openMobileNav();
   });
 
-  // Close on link click
-  mobileNav.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileNav.classList.remove('open'));
+  mobileNav.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', () => closeMobileNav());
   });
 }
 

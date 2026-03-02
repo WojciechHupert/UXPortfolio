@@ -9,6 +9,7 @@ This folder tracks project direction, progress, and implementation details for t
 - `03-technical-overview.md` - Architecture, stack, patterns, and technical constraints.
 - `04-change-log.md` - Dated record of major updates and their impact.
 - `05-decision-log.md` - Architectural/product decisions with rationale and trade-offs.
+- `06-audit-checklist.md` - Webpage vs. stated and implementation skills audit checklist (Pass/Partial/Fail).
 
 ## Update Rhythm
 

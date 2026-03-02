@@ -78,9 +78,9 @@
                                 serves real people—researched, tested, refined, and built for accessibility. Built for
                                 how people actually behave.</p>
                             <p style="margin-bottom: 16px; line-height: 1.7;">We create interfaces and experiences that
-                                work—not just look impressive in portfolios. User research, information architecture,
-                                interaction design, and visual design—built for the people using it and optimized for
-                                how they actually behave.</p>
+                                work—not just look impressive in portfolios. User research and usability testing
+                                inform every decision; together with information architecture, interaction design, and
+                                visual design—built for the people using it and optimized for how they actually behave.</p>
                             <p style="line-height: 1.7;">We start with understanding users—their goals, their context,
                                 their frustrations. Research informs information architecture. Information architecture
                                 informs interaction design. Everything serves the user's ability to accomplish their
@@ -249,14 +249,18 @@
                             <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
                                 <li style="display: flex; gap: 12px; align-items: center;"><span
                                         style="color: var(--color-accent);">✔</span> High-fidelity interface designs
-                                </li>
+                                    (Figma)</li>
                                 <li style="display: flex; gap: 12px; align-items: center;"><span
-                                        style="color: var(--color-accent);">✔</span> Design system components</li>
+                                        style="color: var(--color-accent);">✔</span> Design system components (Figma
+                                    libraries)</li>
                                 <li style="display: flex; gap: 12px; align-items: center;"><span
                                         style="color: var(--color-accent);">✔</span> Accessibility documentation</li>
                                 <li style="display: flex; gap: 12px; align-items: center;"><span
                                         style="color: var(--color-accent);">✔</span> Responsive design specifications
                                 </li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><span
+                                        style="color: var(--color-accent);">✔</span> Analytics &amp; data-visualization
+                                    insights</li>
                             </ul>
                         </div>
                     </div>
@@ -606,8 +610,8 @@
                     <p class="eyebrow"
                         style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:16px;">
                         The Strategic Filter</p>
-                    <h2 class="display-md" style="margin-bottom:16px;color:#fff;">Start with Strategy.</h2>
-                    <p style="max-width:520px;margin:0 auto 32px;color:rgba(255,255,255,0.85);font-size:1.1rem;">
+                    <h2 class="display-md" style="margin-bottom:16px;color:var(--color-text);">Start with Strategy.</h2>
+                    <p style="max-width:520px;margin:0 auto 32px;color:var(--color-text);font-size:1.1rem;">
                         Ensure you're building the right thing—for your users and your business. Let's discuss your
                         project's foundation.
                     </p>
@@ -625,17 +629,43 @@
     </main>
 
     <!-- ── Footer ──────────────────────────────────────────── -->
+    <!-- ── Footer ──────────────────────────────────────────── -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__inner">
-                <span class="footer__logo">Shape<span>.</span>Seeds</span>
-                <nav class="footer__links">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__logo">Shape<span>.</span>Seeds</span>
+                    <p class="footer__tagline">AI Experience Architecture for teams that optimize retention, not just release
+                        velocity.</p>
+                </div>
+
+                <nav class="footer__column" aria-label="Main navigation">
+                    <p class="footer__heading">Explore</p>
+                    <a href="index.html">Approach</a>
                     <a href="portfolio.html">Work</a>
                     <a href="services.html">Services</a>
                     <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
                 </nav>
+
+                <nav class="footer__column" aria-label="Services and resources">
+                    <p class="footer__heading">Focus Areas</p>
+                    <a href="services.html">Agentic Logic Audits</a>
+                    <a href="services.html">Human-in-the-Loop UX</a>
+                    <a href="services.html">Recovery UX and Failsafes</a>
+                    <a href="contact.html">Strategy Sessions</a>
+                </nav>
+
+                <div class="footer__column">
+                    <p class="footer__heading">Contact</p>
+                    <a href="mailto:whupert@gmail.com">whupert@gmail.com</a>
+                    <a href="https://linkedin.com/in/wojciechhupert" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="contact.html">Book an Intro Call</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
                 <p class="footer__copy">© 2026 Shape Seeds. All rights reserved.</p>
+                <p class="footer__legal" aria-label="Legal">Privacy · Terms · Imprint</p>
             </div>
         </div>
     </footer>
