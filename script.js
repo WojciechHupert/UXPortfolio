@@ -99,16 +99,3 @@ if ('IntersectionObserver' in window) {
   revealElements.forEach(el => el.classList.add('visible'));
 }
 
-/* ── Contact Form (mailto fallback) ───────────────────────── */
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('name')?.value || '';
-    const email = document.getElementById('email')?.value || '';
-    const message = document.getElementById('message')?.value || '';
-    const subject = encodeURIComponent(`Portfolio Enquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:whupert@gmail.com?subject=${subject}&body=${body}`;
-  });
-}

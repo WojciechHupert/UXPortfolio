@@ -40,7 +40,7 @@
 
     <!-- ── Hero (redesign: centered, typography-led) ─────── -->
     <section class="hero hero--centered">
-      <div class="hero-centered__bg" aria-hidden="true"></div>
+      <canvas id="heroBlob" class="hero-centered__bg" aria-hidden="true"></canvas>
 
       <div class="container hero-centered__inner">
         <div class="hero-centered__content">
@@ -154,7 +154,7 @@
     <hr class="divider" />
 
     <!-- INTERSTITIAL BANNER 1 (Case Study) -->
-    <section class="banner-speedbump">
+    <section class="banner-speedbump banner-speedbump--feel" style="background-image: url('assets/ocean-waves.gif');">
       <div class="container reveal">
         <h2 class="display-md" style="max-width: 800px; margin: 0 auto; line-height: 1.2;">
           In a world of instant software, <br>
@@ -170,13 +170,6 @@
       <div class="container">
         <div class="solution-grid">
           <div class="solution-visual reveal">
-            <div class="solution-icon-wrap">
-              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
             <blockquote class="pullquote">
               "When developers and PMs build AI workflows, they optimise for the database.<br>
               <span class="pullquote__accent">I optimise for the user.</span>"
@@ -212,22 +205,10 @@
       <div class="container">
         <div class="solution-grid">
           <div class="solution-visual reveal">
-            <div class="solution-icon-wrap">
-              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <blockquote class="pullquote" style="font-size: 1.3rem;">
+            <blockquote class="pullquote" style="font-size: 35px; width: 347px;">
               "I don’t just 'design screens' or 'fix buttons.'<br><br>
               <span class="pullquote__accent">I act as the strategic filter and executive curator.</span>"
             </blockquote>
-            <p style="margin-top: 24px; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6;">
-              I ensure your lean, AI-powered development cycle results in a product that humans actually enjoy using. I
-              provide the high-level "human oversight" that AI lacks—turning automated outputs into intentional
-              outcomes.
-            </p>
           </div>
 
           <div class="solution-content reveal reveal-delay-1">
@@ -356,7 +337,7 @@
     <hr class="divider" />
 
     <!-- INTERSTITIAL BANNER 2 (Case Study) -->
-    <section class="banner-speedbump">
+    <section class="banner-speedbump banner-speedbump--commodities">
       <div class="container reveal">
         <h2 class="display-md" style="max-width: 800px; margin: 0 auto; line-height: 1.2;">
           Stop shipping commodities. <br>
@@ -624,6 +605,10 @@
     </div>
   </footer>
 
+  <script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="hero-blob.js"></script>
   <script src="script.js"></script>
 </body>
 
